@@ -101,5 +101,9 @@ void MainWindow::on_pushButton_clicked()
         }
     }
     QMessageBox::about(this, "result", QString("End of date is [%1 - %2 - %3]").arg(year).arg(month).arg(day-1));
+
+    for (int i = 0; i < 7; i++) {
+        d_day[i] = 9;
+    }
 }
 
